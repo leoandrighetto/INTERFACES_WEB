@@ -7,11 +7,11 @@
         <title>Quiz para programadores!</title><!--4º passo, criar um título que ficara na ABA do navegador.-->
 
         <meta name="description" content="Um quiz interativo"><!--5º passo, criar o meta-->
-
+        <link rel="stylesheet" href="estilos.css">
+        
     </head>
 
     <body> <!--6º Passo, criar o corpo (Parte visual da página)-->
-
         <header> <!-- Em body, podemos criar um CABEÇALHO,-->
 
             <h1>Quiz interativo Para Programadores!</h1><!-- com um TÍTULO-->
@@ -21,16 +21,18 @@
         </header>
 
         <main><!--um texto principal,-->
-
             <section><!--com uma seção-->
-                <h2>Sobre esse Quiz:</h2><!-- subtítulo...-->
+
+                
+
+                <h3>Sobre esse Quiz:</h3><!-- subtítulo...-->
                 <p><!--NEGRITO--><strong>Este Quiz</strong> foi desenvolvido para testar seus conhecimentos em programação.</p>
                 <p>Você irá encontrar muitos tipos de perguntas sobre Python, <abbr title="Hiper Text Markup Language">HTML</abbr>e <abbr title="Cascading Style Sheets">CSS</abbr>!</p>
             </section>
         
             <section><!--NESTA SEÇÃO USAREMOS UM COMANDO PARA GERAR UM FORMULÁRIO:-->
                 <!--PERGUNTA 1: FORMULÁRIO (form)-->
-                <h2> Qual linguagem é usada para estrutura páginas web?</h2>
+                <h3> Qual linguagem é usada para estrutura páginas web?</h3>
                 <form><!--CRIA UM FORMULÁRIO; OPÇÕES PARA MARCAR COM O CURSOR-->
                     <input type="radio" value="Python" id="p1a" name="pergunta1" ><!--ENTRADA DO USUÁRIO com o TIPO de input, o VALOR do input, ID e o NOME.-->
                     <label for="p1a">Python</label><!--LABEL GERA A PERGUNTA NA PÁGINA e utiliza o ID do input como referência.-->
@@ -50,8 +52,8 @@
 
             <section>
                 <!--Pergunta 2: PLACEHOLDER-->
-                <h2>Qual é a linguagem de programação mais utilizada hoje em dia para lidar com ciências de
-                dados?</h2>
+                <h3>Qual é a linguagem de programação mais utilizada hoje em dia para lidar com ciências de
+                dados?</h3>
                 <form>
                     <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta..."><!--INPUT DE TEXTO, PARA ESCREVER ALGO NA PÁGINA. Contém um placeholder-->
 
@@ -60,7 +62,7 @@
 
             <section>
                 <!--pergunta 3: PLACEHOLDER-->
-                <h2>Escreva um exemplo de senha forte</h2>
+                <h3>Escreva um exemplo de senha forte</h3>
                 <form>
                     <input type="password" id="ap3" name="pergunta3" placeholder="Digite sua senha...">
                 </form>
@@ -68,7 +70,7 @@
 
             <section>
                 <!--pergunta 4: DATA-->
-                <h2>Em que ano o HTML lançou sua primeira versão?</h2>
+                <h3/h3>Em que ano o HTML lançou sua primeira versão?</h3>
                 <form>
                     <input type="date" id="p4" name="pergunta4">
                 </form>
@@ -76,7 +78,7 @@
 
             <section>
                 <!--pergunta 5: SELEÇÃO MÚLTIPLA-->
-                <h2>Quais destas tecnologias é considerada linguagem de programação?</h2>
+                <h3/h3>Quais destas tecnologias é considerada linguagem de programação?</h3>
                 <form>
                     <input type="checkbox" id="p5a" name="pergunta5" value="Javascript">
                     <label for="p5a">Javascript</label>
@@ -95,7 +97,7 @@
 
             <section>
                 <!--pergunta 6: UPLOAD DE ARQUIVOS-->
-                <h2>Faça um upload de um arquivo HTML</h2>
+                <h3/h3>Faça um upload de um arquivo HTML</h3>
                 <form>
                     <input type="file" id="p6" name="pergunta6">
                 </form>
@@ -103,7 +105,7 @@
 
             <section>
                 <!--pergunta 7: Menu suspenso-->
-                <h2>Selecione o atributo do input que define o seu tipo</h2>
+                <h3/h3>Selecione o atributo do input que define o seu tipo</h3>
                 <form>
                     <select name="pergunta7" id="p7">
                         <option value="id">ID</option>
@@ -116,7 +118,7 @@
 
             <section>
                 <!--pergunta 8/; imagens-->
-                <h2>Qual linguagem de programação é representada por esta imagem?</h2>
+                <h3/h3>Qual linguagem de programação é representada por esta imagem?</h3>
                 <img src="pythonimage.jpg" alt="">            </section>
 
         </main>
