@@ -1,0 +1,23 @@
+/* RESUMO DE COMANDOS CSS. 
+NO PRIMEIRO EXERCÍCIO FIA UMA PÁGINA PARA CADA ARQUIVO HTML, MAS FOI TRABALHO DEMAAIS. A IDEIA É TRABALHAR O MENOS POSSÍVEL.*/
+
+h1 {
+    font: Tahoma 18pt;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(241, 131, 27);
+    
+}
+
+h3 {
+    font-family: Tahoma ; 
+    font-weight: bold;
+    color:rgb(241, 70, 27)
+}
+
+table {
+    font-family: sans-serif;
+    font-size: 18pt;
+    color: rgb(128, 90, 19);
+    background-color: rgb(224, 224, 224);   
+}
