@@ -1,0 +1,21 @@
+h1 {font-family: Verdana;
+    color: white;
+    text-align: center;
+    font-size: 18pt;
+
+}
+
+h2 {
+    font-family: Verdana;
+    color: red;
+    text-align: center;
+    font-size: 15pt;
+
+}
+
+p, li{
+    font-family: Verdana;
+    text-align: justify;
+    font-size: 13pt;
+
+}
