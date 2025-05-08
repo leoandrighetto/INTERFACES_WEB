@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Avaliação Individual</title>
+    
+    <style> /*CSS CSS CSS CSS CSS CSS CSS CSS*/
+
+        .imagem-topo {        /*cria um conteiner*/
+            display: flex;
+            flex-direction: row;     /*direção flex*/
+            justify-content: center;  /*centralizar*/
+            align-items: center;    /*para centralizar*/
+            width: 100%; /*largura*/
+            height: auto;    /*altura*/
+        }
+
+        .textoimagem-topo {
+            position: absolute;   
+            top: 10px;    /*     top e left são distâncias*/
+            left: 46%;
+            font-family: Verdana;
+            font-size: large;
+            color: white;
+            font-size: 20pt;
+        }
+
+        .menu {
+            display: flex;
+            background-color: rgb(3, 202, 3);
+            justify-content: flex-end;
+            gap: 90px;    /*distâncias entre os elementos das colunas*/
+            height: 30px;
+            align-items: center;   /*alinhamento de items dentro de um felx*/
+            font-family: Verdana;
+            font-weight: bold;
+            color: white;
+            font-size: 13pt;
+        }
+
+        .conteudo {
+            display: block;  /* FUNDO DE PÁGINA */
+            flex-direction: row-reverse;
+            background-color: rgb(88, 245, 88);
+            padding: 40px;  /*IMPORTANTE: cria um espaço entre todo o conteúdo com o fundo da
+             página*/
+            min-height: 500px;
+        }
+        .imagem-texto {
+            display: flex;
+            flex-direction: row-reverse;
+            width: auto;
+            height: 170px;
+        }
+
+        .rodape {
+            display: flex;
+            background-color: rgb(3, 202, 3);
+            gap: 50px;
+            height: 25px;
+            align-items: center;
+            font-family: Verdana;
+            color: white;
+            font-size: 10pt;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="imagem-topo">
+        <img src="banner.png" alt="" class="imagem" width="100%">
+
+        <div class="textoimagem-topo">
+            <h1>Avaliação Individual</h1>
+
+        </div>
+    </div>
+
+    <div class="menu">
+        <div >Quem Somos</div>
+        <div >Podemos Ajudar Você!</div>
+        <div >Cadastre-se</div>
+    </div>
+    <div class="conteudo">
+        <h2>Pessoas negativadas podem se recuperar com a ajuda da educação financeira</h2>
+
+    <div class="imagem-texto">
+        <img src="foto.png" alt="">
+        <p>A missão da QueroQuitar é devolver ao devedor seu status de consumidor. Queremos ajudar as pessoas a deixar para
+            trás um período difícil de suas vidas, livrando-se das dívidas. <br>
+    <br>
+    
+        Uma parte importante desse processo é a educação financeira. Pensando nisso, nós criamos a QueroRenda, uma
+        plataforma com vídeos, artigos, livros digitais e diversos outros recursos voltados a melhorar o conhecimento dos
+        nossos clientes. <br>
+    <br>
+        Transforme sua atitude. Leia nossos artigos: 
+        </p>
+    </div>
+    <p><ul>
+        <li>Como consultar dívidas no CPF?</li>
+        <li>Renegocie suas Dívidas</li>
+        <li>Como se Proteger de Golpes</li>
+    </ul></p>
+    
+
+    </div>
+    
+    <footer class="rodape">
+        <p>@2025-1 INTERFACES WEB</p>
+
+    </footer>
+</body>
+
+</html>
