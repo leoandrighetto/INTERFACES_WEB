@@ -1,0 +1,37 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Clube</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body onload="carregarEstados()">
+  <form onsubmit="return validarFormulario()">
+    <fieldset>
+      <legend>Cadastro de Clube de Futebol</legend>
+
+      <label>Sigla:</label>
+      <input type="text" id="sigla" required>
+
+      <label>Nome do Clube:</label>
+      <input type="text" id="nome" maxlength="100" required>
+
+      <label>Data de Fundação:</label>
+      <input type="date" id="data" required>
+
+      <label>Estado:</label>
+      <select id="estado" onchange="carregarMunicipios(this.value)" required>
+        <option value="">Selecione</option>
+      </select>
+
+      <label>Município:</label>
+      <select id="municipio" required>
+        <option value="">Selecione</option>
+      </select>
+
+      <input type="submit" value="Cadastrar">
+    </fieldset>
+  </form>
+</body>
+</html>
