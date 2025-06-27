@@ -1,38 +1,29 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Cadastro de Clube</title>
-  <link rel="stylesheet" href="estilo.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="script.js"></script>
+  <title>Início - Meu Negócio</title>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body onload="pegarEstados()">
-  <form onsubmit="return validarTudo()">
-    <fieldset>
-      <legend class="titulo">Cadastro de Clube de Futebol</legend>
-
-      <label for="campo-sigla">Sigla:</label>
-      <input type="text" id="campo-sigla" required>
-
-      <label for="campo-nome">Nome do Clube:</label>
-      <input type="text" id="campo-nome" maxlength="100" required>
-
-      <label for="campo-data">Data de Fundação:</label>
-      <input type="date" id="campo-data" required>
-
-      <label for="lista-estados">Estado:</label>
-      <select id="lista-estados" onchange="pegarCidades(this.value)" required>
-        <option value="">Selecione</option>
-      </select>
-
-      <label for="lista-cidades">Município:</label>
-      <select id="lista-cidades" required>
-        <option value="">Selecione</option>
-      </select>
-
-      <input type="submit" value="Cadastrar">
-    </fieldset>
-  </form>
+<body>
+  <header>
+    <div class="banner"></div>
+    <nav class="menu">
+      <ul>
+        <li><img src="img/home.png" alt="Início"><a href="index.html">Home</a></li>
+        <li><img src="img/cursos.png" alt="Cursos"><a href="cursos.html">Cursos</a></li>
+        <li><img src="img/alunos.png" alt="Alunos"><a href="alunos.html">Alunos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="titulo">Nossa História</h1>
+    <p class="descricao">A nossa empresa começou pequena, com grandes sonhos...</p>
+    <img src="img/historia.jpg" alt="História" class="imagem-esquerda">
+    <p class="descricao destaque">Com dedicação e trabalho, fomos crescendo...</p>
+    <img src="img/equipe.jpg" alt="Equipe" class="imagem-centro">
+    <p class="descricao">Hoje, somos referência no mercado, sempre buscando inovação.</p>
+  </main>
 </body>
 </html>
