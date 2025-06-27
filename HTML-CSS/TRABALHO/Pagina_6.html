@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cadastro de Aluno</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <script src="script.js" defer></script>
+</head>
+<body class="pagina-6">
+  <header>
+    <div class="banner"></div>
+    <nav class="menu">
+      <ul>
+        <li><img src="home.png" alt="Início" /><a href="index.html">Home</a></li>
+        <li><img src="cursos.png" alt="Cursos" /><a href="pagina_2.html">Cursos</a></li>
+        <li><img src="alunos.png" alt="Alunos" /><a href="pagina_5.html">Alunos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="titulo">Cadastro de Aluno</h1>
+    <form id="form-aluno">
+      <label for="matricula">Matrícula:</label>
+      <input type="text" id="matricula" name="matricula" maxlength="9" required />
+
+      <label for="nome-aluno">Nome:</label>
+      <input type="text" id="nome-aluno" name="nome-aluno" maxlength="100" required />
+
+      <label for="cpf">CPF:</label>
+      <input type="text" id="cpf" name="cpf" maxlength="14" required />
+
+      <p>Sexo:</p>
+      <label><input type="radio" name="sexo" value="M" required /> Masculino</label>
+      <label><input type="radio" name="sexo" value="F" /> Feminino</label>
+
+      <label for="nascimento">Data de Nascimento:</label>
+      <input type="date" id="nascimento" name="nascimento" required />
+
+      <label for="cep">CEP:</label>
+      <input type="text" id="cep" name="cep" maxlength="8" required />
+      <button type="button" id="botao-buscar-cep">Consultar</button>
+
+      <label for="logradouro">Rua:</label>
+      <input type="text" id="logradouro" name="logradouro" readonly />
+
+      <label for="complemento">Complemento:</label>
+      <input type="text" id="complemento" name="complemento" maxlength="30" />
+
+      <label for="numero">Número:</label>
+      <input type="text" id="numero" name="numero" maxlength="5" />
+
+      <label for="bairro">Bairro:</label>
+      <input type="text" id="bairro" name="bairro" readonly />
+
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" readonly />
+
+      <label for="estado">Estado:</label>
+      <input type="text" id="estado" name="estado" readonly />
+
+      <label for="lista-cursos">Cursos Disponíveis:</label>
+      <select id="lista-cursos" multiple></select>
+
+      <div class="botoes">
+        <button type="submit">Salvar</button>
+        <button type="reset">Cancelar</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

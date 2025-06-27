@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário do Curso</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="banner"></div>
+    <nav class="menu">
+      <ul>
+        <li><img src="home.png" alt="Início"><a href="index.html">Home</a></li>
+        <li><img src="cursos.png" alt="Cursos"><a href="pagina_2.html">Cursos</a></li>
+        <li><img src="alunos.png" alt="Alunos"><a href="pagina_5.html">Alunos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="titulo">Cadastro de Curso</h1>
+    <form id="form-curso">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" maxlength="100" required>
+
+      <p>Modalidade:</p>
+      <label><input type="radio" name="tipo" value="INTEGRADO" required> Integrado</label>
+      <label><input type="radio" name="tipo" value="CONCOMITANTE"> Concomitante</label>
+      <label><input type="radio" name="tipo" value="SUBSEQUENTE"> Subsequente</label>
+      <label><input type="radio" name="tipo" value="CONCOMITANTE E/OU SUBSEQUENTE"> Concomitante/Subsequente</label>
+      <label><input type="radio" name="tipo" value="EJA"> EJA</label>
+      <label><input type="radio" name="tipo" value="SUPERIOR"> Superior</label>
+      <label><input type="radio" name="tipo" value="PÓS-GRADUAÇÃO"> Pós-graduação</label>
+
+      <label for="turno">Turno:</label>
+      <select id="turno" name="turno" required>
+        <option value="">Selecione</option>
+        <option value="manha">Manhã</option>
+        <option value="tarde">Tarde</option>
+        <option value="noite">Noite</option>
+        <option value="manha e tarde">Manhã e Tarde</option>
+        <option value="tarde e noite">Tarde e Noite</option>
+        <option value="manha ou tarde">Manhã ou Tarde</option>
+        <option value="manha ou noite">Manhã ou Noite</option>
+        <option value="tarde ou noite">Tarde ou Noite</option>
+      </select>
+
+      <label for="semestre">Semestre:</label>
+      <input type="number" id="semestre" name="semestre" min="1" max="2" required>
+
+      <label for="campus">Campus:</label>
+      <input type="text" id="campus" name="campus" readonly value="IFRS - Campus Restinga">
+
+      <div class="botoes">
+        <button type="submit" id="botao-salvar">Salvar</button>
+        <button type="reset" id="botao-cancelar">Cancelar</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
