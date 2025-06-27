@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Pesquisa de Cursos</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script defer src="js/cursos.js"></script>
+</head>
+<body>
+  <header>
+    <div class="banner"></div>
+    <nav class="menu">
+      <ul>
+        <li><img src="img/home.png" alt="Início"><a href="index.html">Home</a></li>
+        <li><img src="img/cursos.png" alt="Cursos"><a href="pagina_2.html">Cursos</a></li>
+        <li><img src="img/alunos.png" alt="Alunos"><a href="pagina_5.html">Alunos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class="titulo">Pesquisa de Cursos</h1>
+    <form id="form-busca">
+      <label for="campo-busca">Palavra-chave:</label>
+      <input type="text" id="campo-busca" name="campo-busca">
+      <button type="button" id="botao-filtrar">Filtrar</button>
+    </form>
+    <form id="form-tabela">
+      <table id="tabela">
+        <thead>
+          <tr>
+            <th>Escolher</th>
+            <th>Curso</th>
+            <th>Tipo</th>
+            <th>Turno</th>
+            <th>Local</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+      <button type="submit" id="botao-atualizar">Atualizar</button>
+    </form>
+  </main>
+</body>
+</html>
